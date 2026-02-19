@@ -1,0 +1,47 @@
+Data Engineering Project:
+=========================
+
+
+Agenda:
+=======
+To build a data warehouse system.
+
+
+Steps:
+=====
+1) Download datasets
+====================
+	ERP & CRM
+
+
+2) Required tools:
+==================
+	--> SQL Express server (server to host databases)
+	--> SSMS (DBMS)
+	--> GitHub
+	--> Draw.io(To design model diagrams)
+	--> Notion (To keep track of the project)
+
+
+3) Requirement Analysis:
+=======================
+Develop data warehouse using SQL Sever to store the data from 2 sources (ERP and CRM) which helps in analysing the data and making decisions
+
+----> Data Sources : ERP & CRM
+----> Data Quality : Clean and resolve data quality before analysis
+----> Integration  : Combine both sources into 1 source
+----> Scope 	   : No historization required (Focus only on latest data)
+----> Documentation: Provide clear documentation at the end to the users who will utilise this data to make decision (Data Analyst)
+
+
+4) Data Architecture:
+=============================================
+	- Medallion Architecture
+	DB --> Bronze Layer --> Silver Layer --> Gold layer --> BI tools
+
+
+5) Design Data Architecture:
+============================
+	Using draw.io
+
+6) 
