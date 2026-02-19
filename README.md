@@ -103,7 +103,6 @@ Database → Bronze Layer → Silver Layer → Gold Layer → BI Tools
 * Draw.io
 * Notion
 
----
 
 
 ⭐ *This project demonstrates practical Data Engineering concepts including data integration, transformation, and warehouse architecture design.*
