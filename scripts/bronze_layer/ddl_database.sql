@@ -20,7 +20,7 @@ STEPS INVOLVED:
 */
 
 /* 
-		================= CRM SOURCE =====================
+	====================== CRM SOURCE ===================================
 		# cust_info
 		# prd_info
 		# sales_details		
@@ -91,3 +91,62 @@ CREATE TABLE bronze.crm_sales_details
 
 -- To check if we got all the rows
 SELECT * FROM bronze.crm_sales_details;
+
+/* 
+	========================== ERP SOURCE ===============================
+		# cust_az12
+		# locx_a101
+		# px_cat_gv12		
+*/
+
+--  ========================= TABLE - 4 =================================
+/*This means if we find any table with the following name then drop it. 
+so we can run it many times without getting any error */
+IF OBJECT_ID('bronze.erp_cust_az12', 'U') IS NOT NULL
+	DROP TABLE bronze.erp_cust_az12;
+
+-- create 1st table structure using create command
+CREATE TABLE bronze.erp_cust_az12
+(
+	cid NVARCHAR(50),
+	bdate DATE,
+	gen NVARCHAR(50)
+);
+
+-- To check if we got all the rows
+SELECT * FROM bronze.erp_cust_az12;
+
+
+--  ========================= TABLE - 5 =================================
+/*This means if we find any table with the following name then drop it. 
+so we can run it many times without getting any error */
+IF OBJECT_ID('bronze.erp_locx_a101', 'U') IS NOT NULL
+	DROP TABLE bronze.erp_locx_a101;
+
+-- create 1st table structure using create command
+CREATE TABLE bronze.erp_locx_a101
+(
+	cid NVARCHAR(50),
+	cntry NVARCHAR(50)
+);
+
+-- To check if we got all the rows
+SELECT * FROM bronze.erp_locx_a101;
+
+--  ========================= TABLE - 6 =================================
+/*This means if we find any table with the following name then drop it. 
+so we can run it many times without getting any error */
+IF OBJECT_ID('bronze.erp_px_cat_gv12', 'U') IS NOT NULL
+	DROP TABLE bronze.erp_px_cat_gv12;
+
+-- create 1st table structure using create command
+CREATE TABLE bronze.erp_px_cat_gv12
+(
+	id NVARCHAR(50),
+	cat NVARCHAR(50),
+	subcat NVARCHAR(50),
+	maintenance NVARCHAR(50)
+);
+
+-- To check if we got all the rows
+SELECT * FROM bronze.erp_px_cat_gv12;
